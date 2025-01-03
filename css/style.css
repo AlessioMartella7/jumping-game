@@ -27,9 +27,16 @@ h1 {
 /* Main */
 
 #game {
-    
     height: 400px;
     width: 800px;
     border: 2px solid black;
     margin: 1.5rem auto;
+}
+
+#character {
+    width: 30px;
+    height: 70px;
+    background-color: cornflowerblue;
+    position: relative;
+    top: 326px;
 }
