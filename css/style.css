@@ -39,14 +39,17 @@ h1 {
     width: 30px;
     height: 70px;
     background-color: cornflowerblue;
+    border: 1px solid black;
+    border-radius: 12px;
     position: relative;
     top: 326px;
+    left: 370px;
 }
 
 @keyframes jump {
     0%{top: 326px;}
-    30%{top: 218px;}
-    70%{top: 218px;}
+    30%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
+    70%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
     100%{top: 326px;}
 }
 
