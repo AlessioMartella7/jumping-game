@@ -11,9 +11,25 @@ body{
     font-family:'Rubik Mono One', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: rebeccapurple;
+}
+
 /* Utilities */
 
 .container{
     max-width: 1000px;
     margin: 0 auto;
+}
+
+/* Main */
+
+#game {
+    
+    height: 400px;
+    width: 800px;
+    border: 2px solid black;
+    margin: 1.5rem auto;
 }
