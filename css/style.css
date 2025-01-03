@@ -33,10 +33,23 @@ h1 {
     margin: 1.5rem auto;
 }
 
+/* Character */
+
 #character {
     width: 30px;
     height: 70px;
     background-color: cornflowerblue;
     position: relative;
     top: 326px;
+}
+
+@keyframes jump {
+    0%{top: 326px;}
+    30%{top: 218px;}
+    70%{top: 218px;}
+    100%{top: 326px;}
+}
+
+.animate {
+    animation: jump 300ms linear;
 }
