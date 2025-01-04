@@ -31,7 +31,7 @@ h1 {
     width: 800px;
     border: 2px solid black;
     margin: 1.5rem auto;
-    background: linear-gradient( rgb(58, 179, 235) 0% 60%,  rgba(60, 230, 60, 0.74) 70% );
+    background: linear-gradient( rgb(58, 179, 235) 0% 60%,  rgba(93, 190, 93, 0.74) 70% );
 }
 
 /* Character */
