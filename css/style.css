@@ -43,18 +43,18 @@ h1 {
     border: 1px solid black;
     border-radius: 12px;
     position: relative;
-    top: 326px;
+    top: 306px;
     left: 370px;
 }
 
 @keyframes jump {
-    0%{top: 326px;}
+    0%{top: 306px;}
     30%{top: 180px; height: 30px; background-color:rgb(10, 70, 182);}
     70%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
-    100%{top: 326px; transform: rotate(-360deg);}
+    100%{top: 306px; transform: rotate(-360deg);}
 }
 
-.animate {
+#character.animate {
     animation: jump .4s ease-in  ;
 }
 
@@ -66,9 +66,9 @@ h1 {
     height: 20px;
     background-color: crimson;
     border: 1px solid black;
-    top: 306px;
+    top: 376px;
     left: 781px;
-    /* animation: block 2s infinite linear; */
+    animation: block 2s infinite linear;
 }
 
 @keyframes block {
