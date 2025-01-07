@@ -57,3 +57,21 @@ h1 {
 .animate {
     animation: jump .4s ease-in  ;
 }
+
+/* Block */
+
+#block {
+    position: relative;
+    width: 15px;
+    height: 20px;
+    background-color: crimson;
+    border: 1px solid black;
+    top: 306px;
+    left: 781px;
+    /* animation: block 2s infinite linear; */
+}
+
+@keyframes block {
+    0% {left: 800px;}
+    100% {left: 0px;}
+}
