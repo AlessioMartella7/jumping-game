@@ -71,7 +71,17 @@ h1 {
     animation: block 2s infinite linear;
 }
 
+#block-2 {
+    position: relative;
+    width: 15px;
+    height: 20px;
+    border: 1px solid black;
+    top: 376px;
+    left: 781px;
+    animation: block infinite linear;
+}
 @keyframes block {
     0% {left: 800px;}
     100% {left: 0px;}
 }
+
