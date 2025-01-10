@@ -21,7 +21,7 @@ this.speed = speed;
 this.color = color;
 }
 
-var block2 = new Block(4,[100,25,25])
+var block2 = new Block(3.5,[220,39,221])
 console.log(block2)
 
 var Block2speed = block2.speed;
@@ -30,7 +30,7 @@ var Block2color = block2.color
 var elBlock2 = document.getElementById('block-2');
 console.log(elBlock2)
 
-var animationBlock2Speed = elBlock2.style.animationDuration = Block2speed;
+var animationBlock2Speed = elBlock2.style.animationDuration = Block2speed+'s';
 console.log(animationBlock2Speed)
 
 var bgBlock2Color = elBlock2.style.backgroundColor = 'rgb('+ [Block2color].join(';') + ')';
