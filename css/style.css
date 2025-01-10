@@ -43,15 +43,15 @@ h1 {
     border: 1px solid black;
     border-radius: 12px;
     position: relative;
-    top: 306px;
+    top: 296px;
     left: 370px;
 }
 
 @keyframes jump {
-    0%{top: 306px;}
+    0%{top: 296px;}
     30%{top: 180px; height: 30px; background-color:rgb(10, 70, 182);}
     70%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
-    100%{top: 306px; transform: rotate(-360deg);}
+    100%{top: 296px; transform: rotate(-360deg);}
 }
 
 #character.animate {
@@ -69,19 +69,26 @@ h1 {
     top: 376px;
     left: 781px;
     animation: block 2s infinite linear;
-}
+ }
 
 #block-2 {
     position: relative;
-    width: 15px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border: 1px solid black;
-    top: 376px;
-    left: 781px;
-    animation: block infinite linear;
-}
+    border-radius: 50%;
+    top: 366px;
+    left: 786px;
+    animation: block2 infinite ease-in-out alternate;
+    
+ }
 @keyframes block {
-    0% {left: 800px;}
+    0% {left: 781px;}
+    100% {left: 0px;}
+}
+
+@keyframes block2 {
+    0% {left: 786px;}
     100% {left: 0px;}
 }
 
