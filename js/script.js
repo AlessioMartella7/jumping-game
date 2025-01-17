@@ -8,7 +8,7 @@ function jump(){
         return
     }else{
     character.classList.add('animate') //add class to character
-        setTimeout(removeJump, 400); //remove class after action performed
+        setTimeout(removeJump, 500); //remove class after action performed
     }
 }
 

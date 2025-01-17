@@ -31,6 +31,7 @@ h1 {
     width: 800px;
     border: 2px solid black;
     margin: 1.5rem auto;
+    border-radius: 0.5rem;
     background: linear-gradient( rgb(58, 179, 235) 0% 60%,  rgba(93, 190, 93, 0.74) 70% );
 }
 
@@ -50,12 +51,13 @@ h1 {
 @keyframes jump {
     0%{top: 296px;}
     30%{top: 180px; height: 30px; background-color:rgb(10, 70, 182);}
-    70%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
+    60%{top: 218px; height: 50px; background-color:rgb(10, 70, 182);}
+    80%{top: 250px; }
     100%{top: 296px; transform: rotate(-360deg);}
 }
 
 #character.animate {
-    animation: jump .4s ease-in  ;
+    animation: jump .5s ease-in  ;
 }
 
 /* Block */
@@ -91,4 +93,5 @@ h1 {
     0% {left: 786px;}
     100% {left: 0px;}
 }
+
 
