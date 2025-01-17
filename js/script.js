@@ -38,10 +38,15 @@ function collision(){
    let characterCoord = character.getBoundingClientRect();
    let elBlock2Coord = elBlock2.getBoundingClientRect();
   if(
-    characterCoord.x < elBlock2Coord.x + elBlock2Coord.width &&
+    (characterCoord.x < elBlock2Coord.x + elBlock2Coord.width &&
     characterCoord.x + characterCoord.width > elBlock2Coord.x &&
     characterCoord.y < elBlock2Coord.y + elBlock2Coord.height &&
-    characterCoord.y + characterCoord.height > elBlock2Coord.y
+    characterCoord.y + characterCoord.height > elBlock2Coord.y ) ||
+
+    (characterCoord.x < blockCoord.x + blockCoord.width &&
+    characterCoord.x + characterCoord.width > blockCoord.x &&
+    characterCoord.y < blockCoord.y + blockCoord.height &&
+    characterCoord.y + characterCoord.height > blockCoord.y)
   )
        {
         gameOver = true;
