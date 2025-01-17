@@ -1,6 +1,7 @@
 const character = document.getElementById('character');
 const block = document.getElementById('block');
 const game = document.getElementById('game')
+let gameOver = false;
 
 function jump(){
     if(character.classList == 'animate'){
@@ -24,7 +25,7 @@ this.color = color;
 var block2 = new Block(3.5,[220,39,221])
 var Block2speed = block2.speed;
 var Block2color = block2.color
-var elBlock2 = document.getElementById('block2');
+var elBlock2 = document.getElementById('block-2');
 var animationBlock2Speed = elBlock2.style.animationDuration = Block2speed+'s';
 var bgBlock2Color = elBlock2.style.backgroundColor = 'rgb('+ [Block2color].join(',') + ')';
 
@@ -33,16 +34,37 @@ game.addEventListener('click', jump, false);
 // collision
 
 function collision(){
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
-    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
-    let block2Left = parseInt(window.getComputedStyle(block2).getPropertyValue('left'));
-
-    if(!(characterTop + 70 < 376 || 
-        characterTop + 70 < 366 ||
-        (blockLeft || block2Left )> 370 + 30
-        )
-      ) {
-        return true
+   let blockCoord = block.getBoundingClientRect();
+   let characterCoord = character.getBoundingClientRect();
+   let elBlock2Coord = elBlock2.getBoundingClientRect();
+  if(
+    characterCoord.x < elBlock2Coord.x + elBlock2Coord.width &&
+    characterCoord.x + characterCoord.width > elBlock2Coord.x &&
+    characterCoord.y < elBlock2Coord.y + elBlock2Coord.height &&
+    characterCoord.y + characterCoord.height > elBlock2Coord.y
+  )
+       {
+        gameOver = true;
+        return gameOver
         }
 }
+
+function deathStatus(){
+    if(gameOver){
+        game.style.background = 'black';
+        game.innerText = 'GAME OVER';
+    }
+}
+
+function gameLoop() {
+    if (!gameOver) {
+        collision();  // controlla la collisione in ogni frame
+        deathStatus();  // aggiorna lo stato del gioco
+        requestAnimationFrame(gameLoop); // continua il ciclo del gioco
+    }
+}
+
+gameLoop();
+
+
 
