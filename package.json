@@ -1,0 +1,23 @@
+{
+  "name": "jumping-game",
+  "version": "1.0.0",
+  "description": "***\r ## An easy and relaxing game where you need to jump throught obstacles.\r ***\r ## __Commands:__\r - __left-click__ to `Jump`\r ***\r If you want to take a look [Click Here to Play](https://alessiomartella7.github.io/jumping-game/)\r ***\r *This is not the final product, I'm working and testing different improvments, like the landing page that allow u to start the game, also adding a score for every single obstacle succesully jumped and morte... **Stay connected for further updates!**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessioMartella7/jumping-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlessioMartella7/jumping-game/issues"
+  },
+  "homepage": "https://github.com/AlessioMartella7/jumping-game#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
